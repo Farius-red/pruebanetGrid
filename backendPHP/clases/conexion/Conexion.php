@@ -77,4 +77,11 @@ class Conexion
       return 0;
     }
   }
+
+  // encriptar 
+
+  protected function encriptar($string)
+  {
+    return md5($string);
+  }
 }
