@@ -1,6 +1,6 @@
 <?php
 
-use phpDocumentor\Reflection\Types\Parent_;
+
 
 require_once 'conexion/Conexion.php';
 require_once 'Respuestas.php';
@@ -11,7 +11,8 @@ class Auth extends Conexion
 
     public function login($json)
     {
-        $_respustas = new respuestas;
+
+        $_respustas = new Respuestas;
         $datos = json_decode($json, true);
         if (!isset($datos['usuario']) || !isset($datos["password"])) {
             //error con los campos

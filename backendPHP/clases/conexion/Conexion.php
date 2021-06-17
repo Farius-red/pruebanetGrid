@@ -36,7 +36,6 @@ class Conexion
   }
 
 
-
   private function convertirUTF8($array)
   {
     array_walk_recursive($array, function (&$item, $key) {
@@ -59,6 +58,7 @@ class Conexion
   }
 
 
+
   public function nonQuery($sqlstr)
   {
     $results = $this->conexion->query($sqlstr);
@@ -78,7 +78,7 @@ class Conexion
     }
   }
 
-  // encriptar 
+  //encriptar
 
   protected function encriptar($string)
   {
